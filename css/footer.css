@@ -33,7 +33,7 @@
   }
 
   .footer-list-title {
-    color: var(--darl-gray);
+    color: var(--dark-gray);
     font-size: var(--fs-xs);
     text-transform: uppercase;
     margin-bottom: 2.4rem;
@@ -55,5 +55,12 @@
 
   .list-item a:hover {
     color: var(--orange);
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .footer-nav {
+    padding-left: 2.4rem;
+    border-left: 0.1rem solid var(--dark-gray);
   }
 }
