@@ -1,0 +1,67 @@
+.banner {
+  background: var(--gradient-color);
+  padding-block: 3.2rem;
+  padding-inline: 2.4rem;
+  text-align: center;
+}
+
+.banner-title {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-md);
+  color: var(--white);
+  line-height: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.banner-text {
+  color: var(--white);
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.banner-input {
+  width: 100%;
+  max-width: 47.6rem;
+  padding-block: 1.2rem;
+  padding-inline: 1.6rem;
+  border-radius: 2.4rem;
+  border: 0.1rem solid var(--white);
+  color: var(--white);
+  background-color: transparent;
+}
+
+.banner-input::placeholder {
+  color: var(--white);
+  font-size: var(--fs-xs);
+  text-align: center;
+  background-image: url('../img/search.svg');
+  background-repeat: no-repeat;
+  background-position: 0.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    padding-block: 8rem;
+    padding-inline: 2.4rem;
+  }
+
+  .banner-title {
+    font-size: var(--fs-4l);
+    margin-bottom: 1.6rem;
+  }
+
+  .banner-input::placeholder {
+    font-size: var(--fs-sm);
+    background-position: 6.4rem;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .banner-input {
+    max-width: 59.2rem;
+  }
+
+  .banner-input::placeholder {
+    background-position: 11.2rem;
+  }
+}

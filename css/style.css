@@ -1,0 +1,46 @@
+@import url('./header.css');
+@import url('./banner.css');
+@import url('./carousel.css');
+@import url('./topics.css');
+@import url('./contact.css');
+@import url('./footer.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #ebecee;
+  --darl-gray: #858585;
+  --dark-blue: #002f52;
+  --orange: #eb9b00;
+  --gradient-color: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --footer-bg: #f9f9f9;
+
+  --ff-primary: 'Poppins', sans-serif;
+
+  --fs-xs: 1.4rem;
+  --fs-sm: 1.6rem;
+  --fs-md: 1.8rem;
+  --fs-lg: 2.4rem;
+  --fs-2l: 2.6rem;
+  --fs-3l: 3rem;
+  --fs-4l: 3.6rem;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: var(--fw-400);
+  font-family: var(--ff-primary);
+  background-color: var(--light-gray);
+}

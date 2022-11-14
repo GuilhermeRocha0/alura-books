@@ -1,0 +1,146 @@
+.carousel-title {
+  color: var(--orange);
+  background-color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  padding-top: 1.6rem;
+  padding-bottom: 0.8rem;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: initial;
+  margin-block: 0.8rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: fit-content;
+  background-color: var(--white);
+  margin-block: 1.6rem;
+  margin-inline: 2.4rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+}
+
+.card-description {
+  max-width: 38.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.stars-image {
+  max-width: 8.8rem;
+}
+
+.description-title {
+  color: var(--orange);
+  font-weight: var(--fw-700);
+}
+
+.card-title {
+  color: var(--dark-blue);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-md);
+}
+
+.description-text {
+  font-size: var(--fs-xs);
+  counter-reset: rgba(0, 0, 0, 0.85);
+  max-width: 31.2rem;
+}
+
+.card-image {
+  max-width: 16.8rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.about-button {
+  max-width: 16.8rem;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-weight: var(--fw-700);
+  transition: filter 0.4s;
+}
+
+.about-button:active {
+  filter: brightness(1.25);
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-title {
+    font-size: var(--fs-lg);
+    padding-top: 4rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .swiper-pagination {
+    margin-top: 3.2rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .swiper {
+    width: 70%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 60%;
+  }
+
+  .card {
+    margin-top: 5.6rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .carousel-container {
+    display: flex;
+    gap: 9.6rem;
+    padding-inline: 16rem;
+    padding-top: 9.6rem;
+    padding-bottom: 12rem;
+  }
+
+  .carousel-title {
+    font-size: var(--fs-3l);
+  }
+
+  .swiper-pagination {
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+  }
+
+  .card-description {
+    font-size: var(--fs-3l);
+  }
+}
