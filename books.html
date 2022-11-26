@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="pricennect" href="https://fonts.googleapis.com" />
+    <link rel="pricennect" href="https://fonts.gstatic.com" crossorigin />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="./js/script.js" defer></script>
+    <script src="./js/getAndSortBooks.js" defer></script>
+    <script src="./js/showOrRemoveBooks.js" defer></script>
 
     <title>Alura Books</title>
   </head>
@@ -45,7 +46,7 @@
         </a>
 
         <nav class="navigation">
-          <a href="./books.html">
+          <a href="#">
             <h3 class="nav-title">Categorias</h3>
           </a>
           <ul>
@@ -71,7 +72,7 @@
       <div class="menu-container">
         <ul class="menu">
           <li class="menu-item categories">
-            <a href="./books.html">Categorias</a>
+            <a href="#"> Categorias </a>
             <ul class="categories-list">
               <li>
                 <a href="#" class="nav-item">Programação</a>
@@ -128,218 +129,80 @@
       />
     </section>
 
-    <section class="carousel">
-      <h2 class="carousel-title">Últimos Lançamentos</h2>
-
-      <div class="carousel-container">
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img
-                src="./img/book-apache-kafka-e-spring-boot.svg"
-                alt="Livro sobre Apache Kafka e Spring Boot da Alura Books"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./img/book-lideranca-em-design.svg"
-                alt="Livro sobre Liderança em Design da Alura Books"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./img/book-javascript-assertivo.svg"
-                alt="Livro sobre Javascript Assertivo da Alura Books"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./img/book-guia-front-end.svg"
-                alt="Livro Guia Front-end da Alura Books"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./img/book-acessibilidade.svg"
-                alt="Livro sobre Acessibilidade na Web da Alura Books"
-              />
-            </div>
-          </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="card-container">
-          <div class="card">
-            <div class="card-description">
-              <h3 class="description-title">
-                Talvez você também se interesse por...
-              </h3>
-              <h2 class="card-title">Angular 11 e Firebase</h2>
-              <p class="description-text">
-                Construindo uma aplicação integrada com a plataforma do Google.
-              </p>
-            </div>
-
-            <div class="card-image">
-              <img src="./img/angular.svg" alt="" />
-            </div>
-
-            <div class="card-buttons">
-              <a href="#">
-                <img
-                  src="./img/favorite.svg"
-                  alt="Adicionar em Meus Favoritos"
-                />
-              </a>
-              <a href="#">
-                <img
-                  src="./img/bag.svg"
-                  alt="Adicionar no Carrinho de Compras"
-                />
-              </a>
-            </div>
-
-            <a href="#" class="about-button">Saiba mais </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="carousel">
-      <h2 class="carousel-title">Mais Vendidos</h2>
-
-      <div class="carousel-container">
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img
-                src="./img/book-react-native.svg"
-                alt="Livro sobre React Native da Alura Books"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./img/book-nodejs.svg"
-                alt="Livro sobre Construção de APIs REST com Node.js da Alura Books"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./img/book-javascript-assertivo.svg"
-                alt="Livro sobre Javascript Assertivo da Alura Books"
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <img
-                src="./img/book-guia-front-end.svg"
-                alt="Livro Guia Front-end da Alura Books"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./img/book-tuning-de-sql.svg"
-                alt="Livro sobre SQL da Alura Books"
-              />
-            </div>
-          </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="card-container">
-          <div class="card">
-            <div class="card-description">
-              <img
-                src="./img/stars.svg"
-                alt="Avaliação 5 estrelas"
-                class="stars-image"
-              />
-              <h3 class="description-title">Autora do Mês</h3>
-              <h2 class="card-title">Juliana Agarikov</h2>
-              <p class="description-text">
-                Analista de sistemas e escritora, Juliana é especialista em
-                Front-End.
-              </p>
-            </div>
-
-            <div class="card-image">
-              <img src="./img/writer-image.svg" alt="" />
-            </div>
-
-            <div class="card-buttons">
-              <a href="#">
-                <img
-                  src="./img/favorite.svg"
-                  alt="Adicionar em Meus Favoritos"
-                />
-              </a>
-              <a href="#">
-                <img
-                  src="./img/bag.svg"
-                  alt="Adicionar no Carrinho de Compras"
-                />
-              </a>
-            </div>
-
-            <a href="#" class="about-button">Saiba mais</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="topics">
-      <h2 class="topics-title">Tópicos visitados recentemente</h2>
-      <ul>
+    <nav class="wrap">
+      <ul class="wrap-nav">
         <li>
-          <a href="#" class="topic-link">Android</a>
+          <button
+            class="btn-sort btn-front"
+            href="#"
+            id="btnSortBooksFront"
+            value="front-end"
+            data-filter="front-end"
+          >
+            LIVROS DE FRONT-END
+          </button>
         </li>
         <li>
-          <a href="#" class="topic-link">Marketing Digital</a>
+          <button
+            class="btn-sort btn-back"
+            href="#"
+            id="btnSortBooksBack"
+            value="back-end"
+            data-filter="back-end"
+          >
+            LIVROS DE BACK-END
+          </button>
         </li>
         <li>
-          <a href="#" class="topic-link">Agile</a>
+          <button
+            class="btn-sort btn-data"
+            href="#"
+            id="btnSortBooksData"
+            value="dados"
+            data-filter="dados"
+          >
+            LIVROS DE DADOS
+          </button>
         </li>
         <li>
-          <a href="#" class="topic-link">Startups</a>
+          <button
+            class="btn-sort btn-available"
+            href="#"
+            id="btnBooksAvailable"
+            data-available
+          >
+            LIVROS DISPONÍVEIS
+          </button>
         </li>
         <li>
-          <a href="#" class="topic-link">HTML & CSS</a>
-        </li>
-        <li>
-          <a href="#" class="topic-link">Python</a>
-        </li>
-        <li>
-          <a href="#" class="topic-link">OO</a>
-        </li>
-        <li>
-          <a href="#" class="topic-link">Java</a>
+          <button
+            class="btn-sort btn-price"
+            href="#"
+            id="btnSortByPrice"
+            data-price
+          >
+            ORDENAR POR PREÇO
+          </button>
         </li>
       </ul>
+    </nav>
+
+    <section class="books wrap" id="books"></section>
+
+    <section id="total-value-available-books">
+      <div class="books-available">
+        <p>
+          Todos os livros disponíveis por R$
+          <span id="value">199,00</span>
+        </p>
+      </div>
     </section>
 
     <section class="contact">
       <div class="contact-description">
         <h2 class="contact-title">Fique por dentro das novidades!</h2>
         <p class="contact-text">
-          Atualizações de e-books, novos livros, promoções e outros.
+          Atualizações de e-books, novos books, promoções e outros.
         </p>
       </div>
       <input
